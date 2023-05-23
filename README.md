@@ -1,5 +1,26 @@
-GenericUSBMIDI
+GenericUSBMIDI - updated README
 ==============
+
+This is a macOS driver for the Roland V-Synth G1 to work with MIDI over USB. It has been tested with a Roland V-Synth G1 Version 2 (not XT, not GT) on an Intel based MacBook Pro running Monterey. It was tested with Pro Tools 2021.
+
+All credit to ysalathe for their implementation of the GenericUSBMIDI Driver. 
+
+Slight changes I've implemented are: USB Device ID, Device Display Name, and locating the USB interface descriptor that the V-Synth uses. 
+
+I didn't test the functionality extensively. Note on-off, MIDI cc's, that's all I needed. 
+
+#### to use: 
+Go to releases, download GenericMIDIDriver.plugin, place it into `/Library/Audio/MIDI Drivers/` and restart the computer. 
+
+#### to compile yourself:
+Download source, open XCode, compile source, locate plugin as outlined below, place into `/Library/Audio/MIDI Drivers/` and restart the computer. 
+
+#### the future:
+testing or re-writing if necessary on M1
+
+
+Original ReadMe
+===============
 
 This is an OS X driver for MIDI devices connected via USB. It has been tested with a Roland (Ed) PC-300 MIDI Keyboard connected via USB to an Apple MacBook Pro running Mac OS X v10.8.2 (Mountain Lion) as well as v10.9.1 (Mavericks).
 
